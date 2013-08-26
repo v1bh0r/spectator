@@ -1,9 +1,24 @@
-<div class="hero-unit">
-  <h1>'Allo, 'Allo!</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
+<div class="row-fluid">
+  <h1>(⌐■_■) Spectator - Writing specs made easy</h1>
+  <div class="span12">
+    <div class="span6">
+      <h3>Spec</h3>
+
+      <div ui-ace="{useWrapMode : true,
+        showGutter: true,
+        theme:'textmate',
+        mode: 'yaml'}" ng-model="yaml.content"></div>
+      <div class="alert alert-error" ng-show="yaml.error">
+        {{yaml.error}}
+      </div>
+    </div>
+    <div class="span6">
+      <h3>Jasmine</h3>
+
+      <div ui-ace="{useWrapMode : true,
+        showGutter: true,
+        theme:'textmate',
+        mode: 'javascript'}" ng-model="testScript.content"></div>
+    </div>
+  </div>
 </div>

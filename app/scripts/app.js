@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('spectatorApp', ['ngRoute'])
+angular.module('spectatorApp', ['ngRoute', 'ui.ace'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
