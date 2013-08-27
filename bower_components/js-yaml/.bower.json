@@ -1,0 +1,13 @@
+{
+  "name": "js-yaml",
+  "homepage": "https://github.com/nodeca/js-yaml",
+  "version": "2.1.0",
+  "_release": "2.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.1.0",
+    "commit": "454c7e780cb7b3f9c2fc9f9e03fac1c08c1f2d01"
+  },
+  "_source": "git://github.com/nodeca/js-yaml.git",
+  "_target": "~2.1.0"
+}
