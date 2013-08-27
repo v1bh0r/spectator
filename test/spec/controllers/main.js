@@ -16,7 +16,11 @@ describe('Controller: MainCtrl', function () {
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+  it('changes the test output based on change in the yaml spec definition', function () {
+    scope.$apply(function(){
+      scope.yaml.content = "testtest";
+    })
+
+    expect(scope.testScript.content.length).toBeGreaterThan(0);
   });
 });

@@ -14,7 +14,13 @@ angular.module('spectatorApp')
 
       $scope.$watch('yaml.content', function () {
         try {
-          $scope.testScript.content = JSON.stringify(jsyaml.load($scope.yaml.content));
+          var output = jsyaml.load($scope.yaml.content);
+          if (output !== null) {
+            $scope.testScript.content = JSON.stringify(output);
+          }
+          else {
+            $scope.testScript.content = null;
+          }
           $scope.yaml.error = null;
         }
         catch (e) {
