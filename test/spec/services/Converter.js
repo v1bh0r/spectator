@@ -1,18 +1,20 @@
 'use strict';
 
 describe('Service: Converter', function () {
+  var MOCK_CONVERTER_NAME = "TEST";
+  var MOCK_CONVERTER = {};
 
   // load the service's module
-  beforeEach(module('spectatorApp'));
+  beforeEach(module('spectatorApp', function ($provide) {
+    $provide.value(MOCK_CONVERTER_NAME + "Converter", MOCK_CONVERTER);
+  }));
 
   // instantiate service
   var Converter;
-  var MOCK_CONVERTER_NAME = "TEST-CONVERTER";
-  var MOCK_CONVERTER = {};
+
 
   beforeEach(inject(function (_Converter_) {
     Converter = _Converter_;
-    Converter.register(MOCK_CONVERTER_NAME, MOCK_CONVERTER);
   }));
 
   it('should do something', function () {
@@ -24,9 +26,9 @@ describe('Service: Converter', function () {
     expect(!!converter).toBe(true);
   });
 
-  it('raises exception when converter not found', function(){
-    expect( function(){
-      Converter.fetch("SOME_RANDON_NAME");
-    }).toThrow(new Error("Converter not found"));
+  it('raises exception when converter not found', function () {
+    expect(function () {
+      Converter.fetch("SOME_RANDOM_NAME");
+    }).toThrow(new Error("[$injector:unpr] Unknown provider: SOME_RANDOM_NAMEConverterProvider <- SOME_RANDOM_NAMEConverter"));
   });
 });

@@ -1,19 +1,11 @@
 'use strict';
 
 angular.module('spectatorApp')
-    .service('Converter', function Converter() {
-      var converters = {};
+    .service('Converter', function Converter($injector) {
       return {
-        register: function (name, converter) {
-          converters[name] = converter;
-        },
         fetch: function(name){
-          var found = converters[name];
-          if(found){
-            return found;
-          }else{
-            throw new Error("Converter not found");
-          }
+          console.log(name);
+          return $injector.get(name + 'Converter');
         }
       }
     });

@@ -1,7 +1,10 @@
 'use strict';
 
 angular.module('spectatorApp')
-    .controller('MainCtrl', function ($scope) {
+    .controller('MainCtrl', function ($scope, Converter) {
+
+      var converterSpecToJasmine = null;
+
       $scope.yaml = {
         content: null,
         error: null
@@ -13,10 +16,14 @@ angular.module('spectatorApp')
       }
 
       $scope.$watch('yaml.content', function () {
+        if(converterSpecToJasmine === null){
+          converterSpecToJasmine = Converter.fetch('SpecToJasmine');
+        }
+
         try {
-          var output = jsyaml.load($scope.yaml.content);
-          if (output !== null) {
-            $scope.testScript.content = JSON.stringify(output);
+          var output = converterSpecToJasmine.convert($scope.yaml.content);
+          if (output) {
+            $scope.testScript.content = output;
           }
           else {
             $scope.testScript.content = null;
