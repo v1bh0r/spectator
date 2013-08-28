@@ -2,13 +2,12 @@
 
 angular.module('spectatorApp')
     .service('SpecToJasmineConverter', function SpecToJasmineConverter() {
-      var definitionTemplate = _.template("define('<%= name %>', function () {\n<%= more %> \n})");
-      var exampleTemplate = _.template("it('<%= example %>', function () {})");
-      ;
+      var definitionTemplate = _.template("define('<%= name %>', function () {\n<%= more %>\n});");
+      var exampleTemplate = _.template("it('<%= example %>', function () {});");
 
       var getSubElements = function (element) {
         var subElements = translate(element);
-        subElements = "    " + subElements.replace(/\n/, '\n    ') + "    \n";
+        subElements = "    " + subElements.replace(/\n/, '\n    ') + "\n";
         return subElements;
       }
       var translate = function (node) {

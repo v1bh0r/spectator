@@ -6,7 +6,7 @@ angular.module('spectatorApp')
       var converterSpecToJasmine = null;
 
       $scope.yaml = {
-        content: null,
+        content: "Service - Contact:\n    - has a name\n    - has an address:\n        - has pin code\n        - has street number",
         error: null
       }
 
