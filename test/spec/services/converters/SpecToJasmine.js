@@ -15,7 +15,9 @@ describe('Service: SpecToJasmineConverter', function () {
     expect(!!SpecToJasmineConverter).toBe(true);
   });
 
-  it('converts spec in yaml to jasmine', function(){
-    expect(SpecToJasmineConverter.convert("asdfasdfasd").length).toBeGreaterThan(0);
+  xit('converts spec in yaml to jasmine', function(){
+    var input = "This service\n    - should do something";
+    var output = "describe('This service', function() {\n    it('should do something', function () {\n        \n})    \n})";
+    expect(SpecToJasmineConverter.convert(input)).toBe(output);
   })
 });

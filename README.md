@@ -1,4 +1,6 @@
-spectator
-=========
+(⌐■_■) Spectator - Writing BDD specs made easy
+===============================================
 
-Specs generator for jasmine and rspec
+Visualize your specs in a glance and create stubs for jasmine quickly.
+
+http://vibhor86.github.io/spectator
