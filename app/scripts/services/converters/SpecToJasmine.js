@@ -2,8 +2,8 @@
 
 angular.module('spectatorApp')
     .service('SpecToJasmineConverter', function SpecToJasmineConverter() {
-      var definitionTemplate = _.template("define('<%= name %>', function () {\n<%= more %>\n});");
-      var exampleTemplate = _.template("it('<%= example %>', function () {});");
+      var definitionTemplate = _.template("describe('<%= name %>', function () {\n<%= more %>\n});");
+      var exampleTemplate = _.template("it('<%= example %>', function () {\n    expect(false).toBe(true);\n    });");
 
       var getSubElements = function (element) {
         var subElements = translate(element);
