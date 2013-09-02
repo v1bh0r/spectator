@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35a61f77-6215-494f-bc53-caca094322f8" name="Default" comment="corrected the jasmine script generated.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/services/Converter.js" afterPath="$PROJECT_DIR$/test/spec/services/Converter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/services/converters/SpecToJasmine.js" afterPath="$PROJECT_DIR$/test/spec/services/converters/SpecToJasmine.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/main.js" afterPath="$PROJECT_DIR$/test/spec/controllers/main.js" />
+    <list default="true" id="35a61f77-6215-494f-bc53-caca094322f8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="spectator.iws" />
@@ -28,55 +26,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SpecToJasmine.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/spec/services/converters/SpecToJasmine.js">
+      <file leaf-file-name=".travis.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="59" selection-start="212" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-              <folding />
+            <state line="5" column="19" selection-start="109" selection-end="135" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+              <folding>
+                <marker date="1378156782000" expanded="true" signature="38:135" placeholder="before_script:" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/spec/controllers/main.js">
+      <file leaf-file-name="karma.conf.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/karma.conf.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="34" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.71311474" vertical-offset="489" max-vertical-offset="855">
-              <folding />
+            <state line="15" column="52" selection-start="544" selection-end="547" vertical-scroll-proportion="-3.9615386" vertical-offset="122" max-vertical-offset="915">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jasmine.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/karma-jasmine/lib/jasmine.js">
+      <file leaf-file-name="Gruntfile.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gruntfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="579" column="27" selection-start="15208" selection-end="15243" vertical-scroll-proportion="0.0" vertical-offset="9009" max-vertical-offset="40335">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpecToJasmine.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/services/converters/SpecToJasmine.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="33" selection-start="1611" selection-end="1616" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1065">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="36" selection-start="360" selection-end="373" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="765">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Converter.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/spec/services/Converter.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+            <state line="97" column="28" selection-start="2548" selection-end="2548" vertical-scroll-proportion="-11.196141" vertical-offset="4937" max-vertical-offset="6345">
               <folding />
             </state>
           </provider>
@@ -100,14 +75,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/scripts/services/converters/templates/it.tmplt" />
         <option value="$PROJECT_DIR$/app/views/converter_templates/describe.tmplt" />
         <option value="$PROJECT_DIR$/app/views/converter_templates/it.tmplt" />
         <option value="$PROJECT_DIR$/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/converters/SpecToJasmine.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/Converter.js" />
         <option value="$PROJECT_DIR$/app/views/main.html" />
-        <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/main.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/bower.json" />
@@ -116,6 +89,8 @@
         <option value="$PROJECT_DIR$/test/spec/services/Converter.js" />
         <option value="$PROJECT_DIR$/test/spec/services/converters/SpecToJasmine.js" />
         <option value="$PROJECT_DIR$/test/spec/controllers/main.js" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/Gruntfile.js" />
       </list>
     </option>
   </component>
@@ -150,7 +125,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -375,18 +349,19 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../builtwith.angularjs.org/projects/projects.json" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../builtwith.angularjs.org/projects/projects.json" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -398,15 +373,15 @@
     </key>
   </component>
   <component name="RunManager" selected="Node.js.TDD">
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <setting name="config_file" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
-      <setting name="config_file" value="" />
       <method />
     </configuration>
     <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
@@ -553,25 +528,49 @@
       <created>1378144251572</created>
       <updated>1378144251572</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="karma:dev to be single running. Added another karma:tdd for continuous testing">
+      <created>1378157404434</created>
+      <updated>1378157404434</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="720" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4141252" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32744783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4141252" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32744783" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26012966" sideWeight="0.6741573" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26418152" sideWeight="0.5858748" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32423756" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3258427" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4141252" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32561728" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32744783" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -597,9 +596,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25202593" sideWeight="0.6757624" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258427" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -619,71 +618,38 @@
     <MESSAGE value="social image" />
     <MESSAGE value="Corrected the Angular JS version in bower.json" />
     <MESSAGE value="Fixed the og:image" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed the og:image" />
+    <MESSAGE value="karma:dev to be single running. Added another karma:tdd for continuous testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="karma:dev to be single running. Added another karma:tdd for continuous testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="43" selection-start="222" selection-end="222" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="465">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/bower_components/angular/angular.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="83" selection-start="102" selection-end="102" vertical-scroll-proportion="0.1264045" vertical-offset="0" max-vertical-offset="268605">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../builtwith.angularjs.org/projects/projects.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="18" selection-start="519" selection-end="519" vertical-scroll-proportion="0.5421687" vertical-offset="15" max-vertical-offset="24555">
-          <folding />
-        </state>
+        <state line="13" column="18" selection-start="519" selection-end="519" vertical-scroll-proportion="0.5421687" vertical-offset="15" max-vertical-offset="24555" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="48" selection-start="562" selection-end="562" vertical-scroll-proportion="0.34313726" vertical-offset="120" max-vertical-offset="1260">
-          <folding>
-            <marker date="1378132114000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1378132114000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/grunt-autoprefixer/node_modules/autoprefixer/lib/autoprefixer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="7" selection-start="975" selection-end="975" vertical-scroll-proportion="0.10655738" vertical-offset="411" max-vertical-offset="1665">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="293" column="44" selection-start="7368" selection-end="7368" vertical-scroll-proportion="0.60655737" vertical-offset="4173" max-vertical-offset="6345">
-          <folding />
-        </state>
+        <state line="30" column="7" selection-start="975" selection-end="975" vertical-scroll-proportion="0.10655738" vertical-offset="411" max-vertical-offset="1665" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/bower_components/angular/bower.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="15" selection-start="37" selection-end="47" vertical-scroll-proportion="0.08152174" vertical-offset="0" max-vertical-offset="368">
-          <folding />
-        </state>
+        <state line="2" column="15" selection-start="37" selection-end="47" vertical-scroll-proportion="0.08152174" vertical-offset="0" max-vertical-offset="368" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="31" selection-start="91" selection-end="91" vertical-scroll-proportion="0.16304348" vertical-offset="0" max-vertical-offset="825">
-          <folding />
-        </state>
+        <state line="4" column="31" selection-start="91" selection-end="91" vertical-scroll-proportion="0.16304348" vertical-offset="0" max-vertical-offset="825" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
@@ -695,14 +661,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/services/Converter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="58" selection-start="222" selection-end="222" vertical-scroll-proportion="0.26785713" vertical-offset="0" max-vertical-offset="392">
-          <folding />
-        </state>
+        <state line="7" column="58" selection-start="222" selection-end="222" vertical-scroll-proportion="0.26785713" vertical-offset="0" max-vertical-offset="392" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/karma-jasmine/lib/jasmine.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="579" column="27" selection-start="15208" selection-end="15243" vertical-scroll-proportion="0.0" vertical-offset="9009" max-vertical-offset="40335">
+        <state line="579" column="27" selection-start="15208" selection-end="15243" vertical-scroll-proportion="-0.556701" vertical-offset="9009" max-vertical-offset="40335">
           <folding />
         </state>
       </provider>
@@ -716,14 +680,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="36" selection-start="360" selection-end="373" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="765">
+        <state line="19" column="36" selection-start="360" selection-end="373" vertical-scroll-proportion="0.17525773" vertical-offset="183" max-vertical-offset="765">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/services/converters/SpecToJasmine.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="33" selection-start="1611" selection-end="1616" vertical-scroll-proportion="0.0" vertical-offset="628" max-vertical-offset="1065">
+        <state line="48" column="33" selection-start="1611" selection-end="1616" vertical-scroll-proportion="0.42016807" vertical-offset="470" max-vertical-offset="1065">
           <folding />
         </state>
       </provider>
@@ -737,7 +701,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/spec/controllers/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="34" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.71311474" vertical-offset="489" max-vertical-offset="855">
+        <state line="50" column="48" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.8655462" vertical-offset="235" max-vertical-offset="855">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="19" selection-start="109" selection-end="135" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <folding>
+            <marker date="1378156782000" expanded="true" signature="38:135" placeholder="before_script:" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/karma.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="52" selection-start="544" selection-end="547" vertical-scroll-proportion="-3.9615386" vertical-offset="122" max-vertical-offset="915">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="28" selection-start="2548" selection-end="2548" vertical-scroll-proportion="-11.196141" vertical-offset="4937" max-vertical-offset="6345">
           <folding />
         </state>
       </provider>
