@@ -5,8 +5,10 @@ angular.module('spectatorApp')
 
       var converterSpecToJasmine = null;
 
+      $scope.engineReady = false;
+
       $scope.yaml = {
-        content: "Service - Contact:\n    - has a name\n    - has an address:\n        - has pin code\n        - has street number",
+        content: null,
         error: null
       }
 
@@ -15,25 +17,26 @@ angular.module('spectatorApp')
         error: null
       }
 
-      $scope.$watch('yaml.content', function () {
-        if(converterSpecToJasmine === null){
-          converterSpecToJasmine = Converter.fetch('SpecToJasmine');
-        }
+      Converter.fetch('SpecToJasmine').then(function (converter) {
+        converterSpecToJasmine = converter;
+        $scope.engineReady = true;
+        $scope.yaml.content = "Service - Contact:\n    - has a name\n    - has an address:\n        - has pin code\n        - has street number";
+      });
 
-        try {
-          var output = converterSpecToJasmine.convert($scope.yaml.content);
-          if (output) {
-            $scope.testScript.content = output;
-          }
-          else {
-            $scope.testScript.content = null;
-          }
-          $scope.yaml.error = null;
-        }
-        catch (e) {
-          if ($scope.yaml.content) {
-            $scope.yaml.error = e.message;
-          }
-        }
+      $scope.$watch('yaml.content', function () {
+        converterSpecToJasmine.convert($scope.yaml.content)
+            .then(function (output) {
+              if (output) {
+                $scope.testScript.content = output;
+              }
+              else {
+                $scope.testScript.content = null;
+              }
+              $scope.yaml.error = null;
+            }, function (message) {
+              if ($scope.yaml.content) {
+                $scope.yaml.error = message;
+              }
+            });
       });
     });

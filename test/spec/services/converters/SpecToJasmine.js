@@ -6,18 +6,25 @@ describe('Service: SpecToJasmineConverter', function () {
   beforeEach(module('spectatorApp'));
 
   // instantiate service
-  var SpecToJasmineConverter;
-  beforeEach(inject(function (_SpecToJasmineConverter_) {
+  var SpecToJasmineConverter, httpBackend;
+  beforeEach(inject(function (_SpecToJasmineConverter_, _$httpBackend_) {
     SpecToJasmineConverter = _SpecToJasmineConverter_;
+    httpBackend = _$httpBackend_;
   }));
 
   it('should do something', function () {
     expect(!!SpecToJasmineConverter).toBe(true);
   });
 
-  xit('converts spec in yaml to jasmine', function(){
+  it('converts spec in yaml to jasmine', function(){
+    httpBackend.whenGET('views/converter_templates/describe.tmplt').respond('describe');
+    httpBackend.whenGET('views/converter_templates/it.tmplt').respond('it');
     var input = "This service\n    - should do something";
-    var output = "describe('This service', function() {\n    it('should do something', function () {\n        \n})    \n})";
-    expect(SpecToJasmineConverter.convert(input)).toBe(output);
+    var output = "describe\n    it";
+    var dataToValidate = null;
+    SpecToJasmineConverter.convert(input).then(function(response){
+      dataToValidate = response;
+    });
+    expect(dataToValidate).toBe(output);
   })
 });

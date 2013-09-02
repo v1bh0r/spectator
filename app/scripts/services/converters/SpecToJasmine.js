@@ -1,13 +1,11 @@
 'use strict';
 
 angular.module('spectatorApp')
-    .service('SpecToJasmineConverter', function SpecToJasmineConverter() {
-      var definitionTemplate = _.template("describe('<%= name %>', function () {\n<%= more %>\n});");
-      var exampleTemplate = _.template("it('<%= example %>', function () {\n    expect(false).toBe(true);\n    });");
+    .service('SpecToJasmineConverter', function SpecToJasmineConverter($http, $q) {
+      var definitionTemplate, exampleTemplate;
 
       var getSubElements = function (element) {
         var subElements = translate(element);
-        subElements = "    " + subElements.replace(/\n/, '\n    ') + "\n";
         return subElements;
       }
       var translate = function (node) {
@@ -31,17 +29,36 @@ angular.module('spectatorApp')
               new Error("Unknown type");
           }
         }
-        return output;
+        return js_beautify(output);
       };
 
       var service = {
+        init: function(){
+          var deferred = $q.defer();
+          $http.get('views/converter_templates/describe.tmplt').then(function (result) {
+            definitionTemplate = _.template(result.data);
+            $http.get('views/converter_templates/it.tmplt').then(function (result) {
+              exampleTemplate = _.template(result.data);
+              deferred.resolve(service);
+            });
+          });
+
+          return deferred.promise;
+        },
         convert: function (spec) {
-          var output = jsyaml.load(spec);
-          if (output) {
-            return translate(output);
-          } else {
-            return null;
+          var deferred = $q.defer();
+          try {
+            var output = jsyaml.load(spec);
+            if (output) {
+              deferred.resolve(translate(output));
+            } else {
+              deferred.resolve(output);
+            }
           }
+          catch (e) {
+            deferred.reject(e.message);
+          }
+          return deferred.promise;
         }
       };
 

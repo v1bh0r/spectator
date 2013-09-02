@@ -1,11 +1,10 @@
 'use strict';
 
 angular.module('spectatorApp')
-    .service('Converter', function Converter($injector) {
+    .service('Converter', function Converter($injector, $q) {
       return {
         fetch: function(name){
-          console.log(name);
-          return $injector.get(name + 'Converter');
+          return $injector.get(name + 'Converter').init();
         }
       }
     });
