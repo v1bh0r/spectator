@@ -24,19 +24,22 @@ angular.module('spectatorApp')
       });
 
       $scope.$watch('yaml.content', function () {
-        converterSpecToJasmine.convert($scope.yaml.content)
-            .then(function (output) {
-              if (output) {
-                $scope.testScript.content = output;
-              }
-              else {
-                $scope.testScript.content = null;
-              }
-              $scope.yaml.error = null;
-            }, function (message) {
-              if ($scope.yaml.content) {
-                $scope.yaml.error = message;
-              }
-            });
+        if (converterSpecToJasmine) {
+          converterSpecToJasmine.convert($scope.yaml.content)
+              .then(function (output) {
+                if (output) {
+                  $scope.testScript.content = output;
+                }
+                else {
+                  $scope.testScript.content = null;
+                }
+                $scope.yaml.error = null;
+              }, function (message) {
+                if ($scope.yaml.content) {
+                  $scope.yaml.error = message;
+                }
+              });
+        }
+
       });
     });

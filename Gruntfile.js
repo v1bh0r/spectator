@@ -291,6 +291,7 @@ module.exports = function (grunt) {
               'bower_components/angular/angular.js',
               'bower_components/ace-builds/src-min-noconflict/*.js',
               'images/{,*/}*.{gif,webp}',
+              'views/converter_templates/*.*',
               'styles/fonts/*'
             ]
           },
@@ -404,7 +405,7 @@ module.exports = function (grunt) {
     'ngmin',
     'cssmin',
     'uglify',
-    'rev',
+    //'rev',
     'usemin'
   ]);
 
