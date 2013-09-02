@@ -2,7 +2,9 @@
 
 describe('Service: Converter', function () {
   var MOCK_CONVERTER_NAME = "TEST";
-  var MOCK_CONVERTER = {};
+  var MOCK_CONVERTER = {init: function () {
+    return true;
+  }};
 
   // load the service's module
   beforeEach(module('spectatorApp', function ($provide) {
