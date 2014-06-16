@@ -17,6 +17,7 @@ module.exports = function (config) {
       'app/bower_components/angular-ui-ace/ui-ace.js',
       'app/bower_components/js-yaml/js-yaml.js',
       'app/bower_components/angular-route/angular-route.js',
+      'app/bower_components/underscore/underscore.js',
       'app/scripts/*.js',
       'app/scripts/**/*.js',
       'test/mock/**/*.js',
