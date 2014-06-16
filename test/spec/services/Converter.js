@@ -31,6 +31,6 @@ describe('Service: Converter', function () {
   it('raises exception when converter not found', function () {
     expect(function () {
       Converter.fetch("SOME_RANDOM_NAME");
-    }).toThrow(new Error("[$injector:unpr] Unknown provider: SOME_RANDOM_NAMEConverterProvider <- SOME_RANDOM_NAMEConverter"));
+    }).toThrow();
   });
 });
